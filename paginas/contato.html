@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PORTAL WEB - Contato</title>
+</head>
+<body>
+	<h1>CONTATO</h1>
+	<div>
+		<form name="contato" method="POST" action="mensagem.html">
+			<p>			
+				Nome do usuário <input placeholder="Douglas Xavier" type="text" name="nome_usuario">
+			</p>
+			<p>
+				E-mail <input placeholder="douglas.xavier@ifpb.edu.br" type="text" name="email_usuario">
+			</p>
+			<p>Cidade
+				<select name="cidade">
+					<option disabled="true" selected="true" value="Itaporanga">Selecione uma opção</option>
+					<option value="Itaporanga">Igaracy</option>
+					<option>Pedra Branca</option>
+					<option>Boa Ventura</option>
+					<option>Santana de Mangueira</option>
+					<option>São José do Caiana</option>
+					<option>Diamante</option>
+					<option>Nova Olinda</option>
+					<option >Ibiara</option>
+				</select>	
+			</p>
+			<div>
+				<p><b>Categoria</b></p>
+				
+				<input id="radio_professor" type="radio" name="categoria" value="Professor(a)">
+				<label for="radio_professor">Professor</label>
+
+				<input id="radio_estudante" type="radio" name="categoria" value="Estudante">
+				<label for="radio_estudante">Estudante</label>
+
+				<input id="radio_servidor" type="radio" name="categoria" 	value="Servidor(a) técnico(a)">
+				<label for="radio_servidor">Servidor(a) técnico(a)</label>
+			</div>
+			<div>
+
+				<p><b>Meios de contato</b></p>
+
+				<input id="check_email" type="checkbox" name="meios_contato" value="E-mail">
+				<label for="check_email">E-mail</label>
+
+				<input id="check_telefone" type="checkbox" name="meios_contato" value="Telefone">
+				<label for="check_telefone">Telefone</label>				
+
+
+				<input id="check_fax" type="checkbox" name="meios_contato" value="Fax">
+				<label for="check_fax">Fax</label>
+
+				<input id="check_telepatia" type="checkbox" name="meios_contato" value="Telepatia">
+				<label for="check_telepatia">Telepatia</label>	
+
+			</div>
+			<p><b>Mensagem</b></p>			
+			<textarea style="resize: none;" name="caixademensagem" rows="20" cols="50" placeholder="Escreva sua mensagem aqui"></textarea>
+			<p>
+				<input type="submit" name="btn_enviar" value="Enviar">
+			</p>
+
+		</form>
+	</div>
+</body>
+</html>
